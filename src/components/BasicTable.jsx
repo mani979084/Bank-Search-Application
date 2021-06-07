@@ -88,7 +88,7 @@ const BasicTable = ({ mock_data, getFav }) => {
                 </tbody>
             </table>
 
-            <div className='mt-4 d-md-flex justify-content-center' >
+            <div className='mt-3 d-md-flex justify-content-center' >
                 <div className='me-md-2 mb-3 mb-md-0'>
                     <span>
                         Page{' '}
