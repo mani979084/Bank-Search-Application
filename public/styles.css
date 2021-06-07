@@ -4,3 +4,19 @@
   .favor-head{
     padding: 100px 0;
   }
+@media(max-width:360px){
+  .float-start{
+    width:100% !important;
+    float: none !important;
+  }
+  .float-end{
+    float: none !important;
+    margin-top: 15px !important;
+  }
+  #filter{
+    padding: 0 !important;
+  }
+  #select{
+    margin-top: 15px;
+  }
+}

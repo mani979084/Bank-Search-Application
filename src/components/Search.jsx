@@ -44,9 +44,9 @@ const Search = ({ getCity, favData, getData, getBack }) => {
     return (
         <Fragment>
             <form className='mb-3'>
-                <div className="d-flex">
-                    <h3 className='mb-0 me-3'>Bank Branches</h3>
-                    <select onChange={selectCity} className="form-select" style={{ width: 'auto' }} value={isSelect} aria-label="Default select example">
+                <div className="d-md-flex">
+                    <h3 className='mb-md-0 me-md-3 mb-3'>Bank Branches</h3>
+                    <select onChange={selectCity} className="form-select w-auto float-start" value={isSelect} aria-label="Default select example">
                         <option value="MUMBAI" >Mumbai</option>
                         <option value="BANGALORE">Bangalore</option>
                         <option value="DELHI">Delhi</option>
@@ -54,7 +54,7 @@ const Search = ({ getCity, favData, getData, getBack }) => {
                         <option value="HYDERABAD">Hyderabad</option>
                     </select>
 
-                    <div className='ms-auto'>
+                    <div className='ms-auto float-end'>
                         {isShow ?
                             <Fragment>
                                 <button className='h-100 btn btn-outline-warning' type='button' onClick={deleteFav} >Delete Favourites</button>

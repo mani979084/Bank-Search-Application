@@ -88,8 +88,8 @@ const BasicTable = ({ mock_data, getFav }) => {
                 </tbody>
             </table>
 
-            <div className='mt-3 d-flex justify-content-center' >
-                <div className='me-2'>
+            <div className='mt-4 d-md-flex justify-content-center' >
+                <div className='me-md-2 mb-3 mb-md-0'>
                     <span>
                         Page{' '}
                         <strong className='text-primary'>
@@ -110,7 +110,7 @@ const BasicTable = ({ mock_data, getFav }) => {
                 <button className='btn btn-outline-primary me-1' onClick={nextPage} disabled={!canNextPage} >Next</button>
                 <button className='btn btn-outline-secondary me-2' onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage} >{'>>'}</button>
 
-                <select className='form-select me-2' style={{ width: 'auto' }} value={pageSize} onChange={e => setPageSize(Number(e.target.value))} >
+                <select className='form-select me-2 w-auto float-start' id='select' value={pageSize} onChange={e => setPageSize(Number(e.target.value))} >
                     {
                         [10, 25, 50].map(pageSize => (
                             <option key={pageSize} value={pageSize}>Show {pageSize}</option>

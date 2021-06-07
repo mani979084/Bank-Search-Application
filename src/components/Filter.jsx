@@ -4,7 +4,7 @@ export const Filter = ({ filter, setFilter }) => {
 
     return (
         <>
-            <div className="input-group mb-3 mt-2">
+            <div id='filter' className="input-group mb-3 mt-2 pt-3 pt-md-0">
 
                 <input type="text" className="form-control" value={filter || ''}
                     onChange={e => setFilter(e.target.value)}
